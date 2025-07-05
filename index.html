@@ -92,7 +92,7 @@
     <a href="#blogs">Blogs</a>
     <a href="#login">Login</a>
     <a href="#signup">Sign Up</a>
-  </na>
+  </nav>
 
   <section id="home">
     <h2>Welcome to Arun CSC Centre</h2>
@@ -133,12 +133,19 @@
     <p>Coming soon! Stay tuned for useful information and updates about CSC services.</p>
   </section>
 
-<section id="login">
-  <h2>Login</h2>
-  <form action="...">
-    ...
-  </form>
-</section>
+  <section id="login">
+    <h2>Login</h2>
+    <form action="https://formsubmit.co/aruncsccentre@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://aruncsccentre.github.io/dashboard.html">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <div class="form-links">
+        <a href="forgot-password.html">Forgot Password?</a>
+      </div>
+    </form>
+  </section>
+
   <section id="signup">
     <h2>Sign Up</h2>
     <form action="https://formsubmit.co/aruncsccentre@gmail.com" method="POST">
