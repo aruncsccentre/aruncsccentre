@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Arun CSC Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #ecf0f3;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .signup-box {
+      background: #ecf0f3;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+      width: 350px;
+    }
+    .signup-box h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      background: #ecf0f3;
+      box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+      border-radius: 50px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #2c3e50;
+      color: white;
+      border-radius: 50px;
+      box-shadow: 5px 5px 8px #cbced1, -5px -5px 8px #fff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .links a {
+      color: #3498db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h2>Create Account</h2>
+    <form action="https://formsubmit.co/aruncsccentre@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://aruncsccentre.github.io/thank-you.html">
+      <input type="hidden" name="_autoresponse" value="Thank you for signing up with Arun CSC Centre! We will contact you soon." />
+      <div class="input-group">
+        <input type="text" name="fullname" placeholder="Full Name" required />
+      </div>
+      <div class="input-group">
+        <input type="email" name="email" placeholder="Email" required />
+      </div>
+      <div class="input-group">
+        <input type="text" name="username" placeholder="Username" required />
+      </div>
+      <div class="input-group">
+        <input type="password" name="password" placeholder="Password (min 6 characters)" minlength="6" required />
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="links">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
