@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Arun CSC Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #ecf0f3;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-box {
+      background: #ecf0f3;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+      width: 350px;
+    }
+    .login-box h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    .input-group {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px 10px 10px 40px;
+      border: none;
+      outline: none;
+      background: #ecf0f3;
+      box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+      border-radius: 50px;
+    }
+    .input-group i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #666;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #2c3e50;
+      color: white;
+      border-radius: 50px;
+      box-shadow: 5px 5px 8px #cbced1, -5px -5px 8px #fff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .links a {
+      color: #3498db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    function validateLoginForm(event) {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      if (!username || !password) {
+        alert('Please fill in both username and password.');
+        event.preventDefault();
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="https://formsubmit.co/aruncsccentre@gmail.com" method="POST" onsubmit="validateLoginForm(event)">
+      <input type="hidden" name="_next" value="https://aruncsccentre.github.io/dashboard.html">
+      <div class="input-group">
+        <i class="fa fa-user"></i>
+        <input type="text" id="username" name="username" placeholder="Username" required />
+      </div>
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" id="password" name="password" placeholder="Password" required />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div class="links">
+      <a href="forgot-password.html">Forgot password?</a>
+      <br />
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</body>
+</html>
